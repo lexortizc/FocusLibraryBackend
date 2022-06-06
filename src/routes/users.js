@@ -4,6 +4,7 @@ const { validateToken } = require('../helpers/jwt');
 
 const router = Router();
 
+router.post('/', res.status(200).json({ message: "Hello World!"}));
 router.post('/users/login', login);
 router.post('/users/signup', validateToken, signup);
 
