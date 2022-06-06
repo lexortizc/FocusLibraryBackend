@@ -1,9 +1,9 @@
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
-const userRoutes = require('./routes/users');
-const bookRoutes = require('./routes/books');
-const requestRoutes = require('./routes/requests');
+const userRoutes = require('./src/routes/users');
+const bookRoutes = require('./src/routes/books');
+const requestRoutes = require('./src/routes/requests');
 
 const app = express();
 app.use(cors());
